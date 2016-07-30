@@ -105,9 +105,9 @@ public class APIRequestManager<T> {
      * @param vo       response vo
      * @param listener APIResponseListener
      */
-    public void successResponse(String uniqueID, String type, Object vo, APIResponseListener listener) {
+    public void successResponse(String uniqueID, Object vo, APIResponseListener listener) {
         if (!isRequestRefreshToken) {
-            listener.getData(type, vo);
+            listener.getData(vo);
             removeRequestCall(uniqueID);
         }
     }

@@ -47,7 +47,7 @@ public class MemberDetail {
             public void onResponse(Response<Object> response, Retrofit retrofit) {
                 if (response.isSuccess()) {
                     MemberVO vo = (MemberVO) APIUtils.toJsonObject(response.body(), MemberVO.class);
-                    mAPIRequestManager.successResponse(mUniqueID, vo.getNonce(), vo, mAPIResponseListener);
+                    mAPIRequestManager.successResponse(mUniqueID, vo, mAPIResponseListener);
                 } else {
                     APIUtils.errorResponse(mContext, mUniqueID, response, mAPIResponseListener);
                 }
@@ -74,7 +74,7 @@ public class MemberDetail {
             public void onResponse(Response<Object> response, Retrofit retrofit) {
                 if (response.isSuccess()) {
                     MemberVO vo = (MemberVO) APIUtils.toJsonObject(response.body(), MemberVO.class);
-                    mAPIRequestManager.successResponse(mUniqueID, vo.getNonce(), vo, mAPIResponseListener);
+                    mAPIRequestManager.successResponse(mUniqueID, vo, mAPIResponseListener);
                 } else {
                     APIUtils.errorResponse(mContext, mUniqueID, response, mAPIResponseListener);
                 }
@@ -101,7 +101,7 @@ public class MemberDetail {
             public void onResponse(Response<Object> response, Retrofit retrofit) {
                 if (response.isSuccess()) {
                     MemberVO vo = (MemberVO) APIUtils.toJsonObject(response.body(), MemberVO.class);
-                    mAPIRequestManager.successResponse(mUniqueID, vo.getNonce(), vo, mAPIResponseListener);
+                    mAPIRequestManager.successResponse(mUniqueID, vo, mAPIResponseListener);
                 } else {
                     APIUtils.errorResponse(mContext, mUniqueID, response, mAPIResponseListener);
                 }
@@ -128,7 +128,7 @@ public class MemberDetail {
             public void onResponse(Response<Object> response, Retrofit retrofit) {
                 if (response.isSuccess()) {
                     MemberVO vo = (MemberVO) APIUtils.toJsonObject(response.body(), MemberVO.class);
-                    mAPIRequestManager.successResponse(mUniqueID, vo.getNonce(), vo, mAPIResponseListener);
+                    mAPIRequestManager.successResponse(mUniqueID, vo, mAPIResponseListener);
                 } else {
                     APIUtils.errorResponse(mContext, mUniqueID, response, mAPIResponseListener);
                 }

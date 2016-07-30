@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .requestGetMember(memberID)
                 .setListener(new APIResponseListener() {
                     @Override
-                    public void getData(String type, Object obj) {
+                    public void getData(Object obj) {
                         MemberVO vo = (MemberVO) obj;
                         Log.d(TAG, "success : " + APIUtils.toJson(vo));
                     }
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .requestPostMember(vo)
                 .setListener(new APIResponseListener() {
                     @Override
-                    public void getData(String type, Object obj) {
+                    public void getData(Object obj) {
                         MemberVO vo = (MemberVO) obj;
                         Log.d(TAG, "success : " + APIUtils.toJson(vo));
                     }
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .requestPutMember(memberID, vo)
                 .setListener(new APIResponseListener() {
                     @Override
-                    public void getData(String type, Object obj) {
+                    public void getData(Object obj) {
                         MemberVO vo = (MemberVO) obj;
                         Log.d(TAG, "success : " + APIUtils.toJson(vo));
                     }
@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .requestDeleteMember(memberID)
                 .setListener(new APIResponseListener() {
                     @Override
-                    public void getData(String type, Object obj) {
+                    public void getData(Object obj) {
                         MemberVO vo = (MemberVO) obj;
                         Log.d(TAG, "success : " + APIUtils.toJson(vo));
                     }

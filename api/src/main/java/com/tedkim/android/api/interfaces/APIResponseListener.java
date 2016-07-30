@@ -9,7 +9,7 @@ import com.tedkim.android.api.vo.ErrorVO;
  */
 public interface APIResponseListener {
 
-    void getData(String type, Object obj);
+    void getData(Object obj);
     void getError(ErrorVO errorVO);
 
 }

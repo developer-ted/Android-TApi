@@ -9,7 +9,6 @@ public class MemberVO {
     private String name;
     private int age;
     private String gender;
-    private String nonce;
 
     public String getResult() {
         return result;
@@ -41,13 +40,5 @@ public class MemberVO {
 
     public void setGender(String gender) {
         this.gender = gender;
-    }
-
-    public String getNonce() {
-        return nonce;
-    }
-
-    public void setNonce(String nonce) {
-        this.nonce = nonce;
     }
 }
